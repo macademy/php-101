@@ -1,1 +1,4 @@
-<h1><?= 'Hello world!' ?></h1>
+<?php
+$title = 'My Blog';
+?>
+<h1><?= $title ?></h1>
