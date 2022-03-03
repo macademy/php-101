@@ -1,6 +1,6 @@
 <?php
-$title = (int) 'My Blog';
-$numPosts = (string) 10;
+$title = 'My Blog';
+$numPosts = '10' . '10';
 ?>
 <h1><?= $title ?></h1>
 <p><?= gettype($title) ?></p>
