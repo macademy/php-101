@@ -1,8 +1,7 @@
 <?php
 $title = 'My Blog';
-$numPosts = '10' . '10';
+$numPosts = 10;
+$numPostsDisplay = $numPosts . ' posts';
 ?>
 <h1><?= $title ?></h1>
-<p><?= gettype($title) ?></p>
-<h2><?= $numPosts ?></h2>
-<p><?= gettype($numPosts) ?></p>
+<h2><?= $numPostsDisplay ?></h2>
