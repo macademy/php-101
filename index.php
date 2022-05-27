@@ -16,4 +16,7 @@ $numPostsDisplay = "$numPosts $postText";
 ?>
 <h1><?= $title ?></h1>
 <h2><?= $numPostsDisplay ?></h2>
-<pre><?php var_dump($posts) ?></pre>
+<?php for ($i = 0; $i < $numPosts; $i++) : ?>
+    <h3><?= $posts[$i]['title'] ?></h3>
+    <p><?= $posts[$i]['content'] ?></p>
+<?php endfor ?>
