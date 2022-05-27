@@ -10,8 +10,9 @@ $posts = [
         'content' => 'This is how you learn MySQL.',
     ],
 ];
-$numPosts = 10;
-$numPostsDisplay = "\"$numPosts\" posts";
+$numPosts = count($posts);
+$postText = $numPosts === 1 ? 'post' : 'posts';
+$numPostsDisplay = "$numPosts $postText";
 ?>
 <h1><?= $title ?></h1>
 <h2><?= $numPostsDisplay ?></h2>
