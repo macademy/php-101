@@ -1,4 +1,9 @@
 <?php
+function getPosts()
+{
+    
+}
+
 $title = 'My Blog';
 $posts = [
     [
