@@ -1,24 +1,23 @@
 <?php
 function getPosts()
 {
-    
+    $posts = [
+        [
+            'title' => 'How to learn PHP',
+            'content' => 'This is how you learn PHP.',
+        ],
+        [
+            'title' => 'How to learn MySQL',
+            'content' => 'This is how you learn MySQL.',
+        ],
+        [
+            'title' => 'How to learn Nginx',
+            'content' => 'This is how you learn Nginx.',
+        ],
+    ];
 }
 
 $title = 'My Blog';
-$posts = [
-    [
-        'title' => 'How to learn PHP',
-        'content' => 'This is how you learn PHP.',
-    ],
-    [
-        'title' => 'How to learn MySQL',
-        'content' => 'This is how you learn MySQL.',
-    ],
-    [
-        'title' => 'How to learn Nginx',
-        'content' => 'This is how you learn Nginx.',
-    ],
-];
 $numPosts = count($posts);
 $postText = $numPosts === 1 ? 'post' : 'posts';
 $numPostsDisplay = "$numPosts $postText";
