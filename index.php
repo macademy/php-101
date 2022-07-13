@@ -1,5 +1,5 @@
 <?php
-function getPosts()
+function getPosts(): array
 {
     return [
         [
@@ -17,7 +17,7 @@ function getPosts()
     ];
 }
 
-function getPostText($numPosts)
+function getPostText(int $numPosts): string
 {
     return $numPosts === 1 ? 'post' : 'posts';
 }
