@@ -17,10 +17,15 @@ function getPosts()
     ];
 }
 
+function getPostText($numPosts)
+{
+    return $numPosts === 1 ? 'post' : 'posts';
+}
+
 $title = 'My Blog';
 $posts = getPosts();
 $numPosts = count($posts);
-$postText = $numPosts === 1 ? 'post' : 'posts';
+$postText = getPostText($numPosts);
 $numPostsDisplay = "$numPosts $postText";
 ?>
 <h1><?= $title ?></h1>
