@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-require('classes/Post.php');
+require('vendor/autoload.php');
 
 use App\Post;
 

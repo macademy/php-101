@@ -2,8 +2,6 @@
 
 namespace App;
 
-require('classes/Author.php');
-
 class Post
 {
     public static function getAll(): array
