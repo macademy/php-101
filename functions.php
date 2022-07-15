@@ -1,7 +1,11 @@
 <?php declare(strict_types=1);
 
+require('classes/Author.php');
+
 function getPosts(): array
 {
+    $author = new Author();
+
     return [
         [
             'title' => 'How to learn PHP',
