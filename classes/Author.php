@@ -2,8 +2,10 @@
 
 class Author
 {
+    public string $name;
+
     public function __construct($name)
     {
-        var_dump($name);
+        $this->name = $name;
     }
 }
