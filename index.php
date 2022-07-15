@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-require('functions.php');
+require('classes/Post.php');
 
 $title = 'My Blog';
-$posts = getPosts();
+$posts = Post::getAll();
 $numPosts = count($posts);
-$postText = getPostText($numPosts);
+$postText = Post::getText($numPosts);
 $numPostsDisplay = "$numPosts $postText";
 ?>
 <h1><?= $title ?></h1>
