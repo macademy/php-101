@@ -11,17 +11,17 @@ function getPosts(): array
         [
             'title' => 'How to learn PHP',
             'content' => 'This is how you learn PHP.',
-            'author' => $author1->name,
+            'author' => $author1->getName(),
         ],
         [
             'title' => 'How to learn MySQL',
             'content' => 'This is how you learn MySQL.',
-            'author' => $author1->name,
+            'author' => $author1->getName(),
         ],
         [
             'title' => 'How to learn Nginx',
             'content' => 'This is how you learn Nginx.',
-            'author' => $author2->name,
+            'author' => $author2->getName(),
         ],
     ];
 }

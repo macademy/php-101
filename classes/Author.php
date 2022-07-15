@@ -3,6 +3,11 @@
 class Author
 {
     public function __construct(
-        public string $name
+        private string $name
     ) {}
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }
