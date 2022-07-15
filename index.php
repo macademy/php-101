@@ -2,6 +2,8 @@
 
 require('classes/Post.php');
 
+use App\Post;
+
 $title = 'My Blog';
 $posts = Post::getAll();
 $numPosts = count($posts);
